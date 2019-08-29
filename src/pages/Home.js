@@ -1,8 +1,8 @@
 import React from 'react'
-
-const Home = (props) => {
+import Hero from '../components/Hero'
+const Home = ( props ) => {
     return ( 
-        <div>Hello from home page  </div>
+        <Hero />
      );
 }
  

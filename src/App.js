@@ -6,14 +6,22 @@ import Home from './pages/Home'
 import Error from './pages/Error'
 import Room from './pages/Room'
 import SingleRoom from './pages/SingleRoom'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
+
     <>
+    <Navbar />
+      <Switch>
     <Route path='/' exact component={Home} />
-    <Route path='/room/' component={Room} />
-    <Route path='/single-room' component={SingleRoom} />
+    <Route path='/rooms/' exact component={Room} />
+    <Route path='/rooms/:id' exact component={SingleRoom}
+     />
+    <Route component={Error} />
+    </Switch>
     </>
+
   );
 }
 
