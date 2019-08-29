@@ -7,7 +7,7 @@ const Error = ( props ) => {
     return ( 
         <Hero>
             <Banner className='banner' title='404' subtitle='page not found'>
-                <Link to='/' className='btn-primary'>Return Home</Link>
+                <Link to='/' className='btn-primary'>Return Home </Link>
             </Banner>
         </Hero>
      );
