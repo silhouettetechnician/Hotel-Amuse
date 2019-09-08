@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import Services from '../components/Services'
+import FeaturedRooms from '../components/FeaturedRooms'
+import SimpleStyled from '../components/StyledHero'
 import { Link } from 'react-router-dom' 
 
 const Home = ( props ) => {
@@ -13,6 +15,7 @@ const Home = ( props ) => {
             </Banner>
         </Hero>
         <Services />
+        <FeaturedRooms />
         </>
      );
 }
